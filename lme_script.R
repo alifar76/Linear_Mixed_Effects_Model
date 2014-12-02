@@ -1,7 +1,7 @@
 rm(list=ls())
 library(lmerTest)
-setwd('/Users/alifaruqi/Desktop/Projects/Marcus_Project/Github_Code_LME_Marcus/LME_Model_Evenness_Richness')
-MYdata = read.csv("metadata_3rd_july_13.csv", sep=",", header=T)
+#setwd('/Users/alifaruqi/Desktop/Projects/Marcus_Project/Github_Code_LME_Marcus/LME_Model_Evenness_Richness')
+MYdata = read.csv("input_file.csv", sep=",", header=T)
 
 MYdata$frequent_exposure_pet <- relevel(MYdata$frequent_exposure_pet, ref = "neither")
 MYdata$Feeding <- relevel(MYdata$Feeding, ref = "combination")
